@@ -1,0 +1,6 @@
+<%= simple_form_for @message do |f| %>
+  <%= f.input :title, label: "Topic", error: "Topic is mandatory, please specify one." %>
+  <%= f.input :published_on, :label => 'Date', :as => :string, :input_html =>{:class=>'datepicker'} %>
+  <%= f.input :description, label: "Comments" %>
+  <%= f.button :submit %>
+<% end %>
